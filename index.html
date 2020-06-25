@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+		<title>**********</title>
+		
+		<!-- Bootstrap CSS -->
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" 
+		integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+		
+		
+		<!-- Personalised CSS -->
+		<link href="css/style.css" rel="stylesheet">
+		
+	</head>
+
+
+	<body>
+	
+		<header class="header">
+			
+			<!-- navbar-expand-lg - determines when the nav switches between a button and a list
+				 bg-light is an example that can be added to set a colour -->
+	<!--Option to add "fixed-top" as a class -->
+			<nav class="navbar navbar-expand-lg navbar-light">
+				
+	<!-- Should I add navbar-brand here as a class -->
+				<a href="#"><img class="logo" src="images/logo-black.png" alt=""></a>
+				
+				
+	<!-- Haven't included aria-controls and aria-expand -->
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nav-list" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				
+				
+				<!-- The classnavbar-collapse made the navbar appear above the expand breakpoint set out in the nav class -->
+	<!-- Do each of the list items need data-vale="xxxxx" ? -->
+	<!-- I've changed the name of the id from navbarSupportedContent to nav-list, does this matter? -->
+				<div class="collapse navbar-collapse" id="nav-list">
+					
+					<!-- ml-auto makes the navigation list move to the right as the left margin is set to the max -->
+					<ul class="navbar-nav ml-auto">
+						<li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+						<li class="nav-item"><a class="nav-link" href="#">About</a></li>
+						
+						<!--Dropdown navigation link for countries -->
+						<li class="nav-item dropdown">
+	<!--Haven't included id="navbarDropdown" role="button" aria-haspopup="true" aria-expanded="false"-->
+							<a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">Countries</a>
+							
+	<!--Haven't included aria-labelledby="navbarDropdown" -->
+							<div class="dropdown-menu">
+								<a class = "dropdown-item" href"#">China</a>
+								<a class = "dropdown-item" href"#">Australia</a>
+								<a class = "dropdown-item" href"#">New Zealand</a>
+								<a class = "dropdown-item" href"#">Singapore</a>
+								<a class = "dropdown-item" href"#">Philippines</a>
+								<a class = "dropdown-item" href"#">Japan</a>
+							</div>
+						</li>
+						
+						<li class="nav-item"><a class="nav-link" href="#">Gallery</a></li>
+						<li class="nav-item"><a class="nav-link" href="#">Team</a></li>
+						<li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+					</ul>
+				</div>
+			</nav>
+			<!-- ******* NAV NOTES ****** 
+				- add active class to the list item that the page is currently viewing			
+			-->
+			
+			<!-- Jumbotron -->
+			<div class="jumbotron d-flex align-items-center">
+				<div class="container jumbo__text">
+					<!-- Could consider changing display-4 to larger font on bigger screens -->
+					<h1 class="display-3">My Adventures</h1>
+					<p class="lead">A look into some of the places that I've been</p>
+					<a class="btn btn-lg jumbo__btn" >See more</a>
+				</div>
+			</div>
+			
+		</header>
+		
+		
+		<section class="about">
+		
+			<div class="container">
+			
+				<h2>About me</h2>
+				
+				<div class="row">
+				
+					<div class="col-12 col-md-6 col-lg-4">
+						<img class="about__img mx-auto" src="images/hannah-hike.jpg" alt="Hannah smiling on a hike">		
+					</div>
+					
+					<div class="about__text col-12 col-md-6 col-lg-8">
+						<div>
+							<p>My name is Hannah and I love trying new things.</p>
+							<p>I've always enjoyed travelling and planned to spend the year 2020 travelling the world with my husband and our friends. 
+							Unfortunately we were only able to travel for 3 months of the 12 that we had planned.</p>
+							<p>So instead of sunning myself on exotic beaches and visiting world heritage sites I decided to document the travels that 
+							we managed to complete instead!</p>
+						</div>
+					</div>
+				
+				
+				</div>
+			
+			</div>
+				
+		</section>
+		
+		
+		<section class="countries">
+		
+			<div class="container">
+			
+				<h2>Where I've been</h2>
+			
+				<div class="row row-cols-1 row-cols-sm-2 row-cols-lg-3 "> <!--A div to wrap all the cards in -->
+				
+					
+					<div class="col mb-4 countries__card">
+						<div class="card">
+							<img class="card-top-img countries__img" src="images/china.jpg" alt="">
+							<div class="card-body">
+								<h3>China</h3>
+								<p>A litte blurb about the country</p>
+								<a href="#" class="btn countries__btn">Read more</a>
+							</div>
+						</div>
+					</div>
+					
+					<div class="col mb-4 countries__card">
+						<div class="card">
+							<img class="card-top-img countries__img" src="images/australia.jpg" alt="">
+							<div class="card-body">
+								<h3>Australia</h3>
+								<p>A litte blurb about the country</p>
+								<a href="#" class="btn countries__btn">Read more</a>
+							</div>
+						</div>
+					</div>
+					
+					<div class="col mb-4 countries__card">
+						<div class="card">
+							<img class="card-top-img countries__img" src="images/new-zealand.jpg" alt="">
+							<div class="card-body">
+								<h3>New Zealand</h3>
+								<p>A litte blurb about the country</p>
+								<a href="#" class="btn countries__btn">Read more</a>
+							</div>
+						</div>
+					</div>
+					
+					<div class="col mb-4 countries__card">
+						<div class="card">
+							<img class="card-top-img countries__img" src="images/singapore.jpg" alt="">
+							<div class="card-body">
+								<h3>Singapore</h3>
+								<p>A litte blurb about the country</p>
+								<a href="#" class="btn countries__btn">Read more</a>
+							</div>
+						</div>
+					</div>
+					
+					<div class="col mb-4 countries__card">
+						<div class="card">
+							<img class="card-top-img countries__img" src="images/philippines.jpg" alt="">
+							<div class="card-body">
+								<h3>Philippines</h3>
+								<p>A litte blurb about the country</p>
+								<a href="#" class="btn countries__btn">Read more</a>
+							</div>
+						</div>
+					</div>
+					
+					<div class="col mb-4 countries__card">
+						<div class="card">
+							<img class="card-top-img countries__img" src="images/japan.jpg" alt="">
+							<div class="card-body">
+								<h3>Japan</h3>
+								<p>A litte blurb about the country</p>
+								<a href="#" class="btn countries__btn">Read more</a>
+							</div>
+						</div>
+					</div>
+					
+					
+					
+				
+				
+				
+				</div>
+						
+			</div>
+				
+		</section>
+		
+			
+	
+	
+	
+	
+	
+	
+	
+		<!-- Bootstrap Javascript - jQuery, then Popper.js and finally Bootstrap JS -->
+		<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" 
+		integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+		<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" 
+		integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" 
+		integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+		
+		<!-- Personalised JS -->
+		<script src="js/javascript.js"></script>
+	
+	</body>
+
+
+</html>
