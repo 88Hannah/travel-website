@@ -5,9 +5,25 @@
 	/* Colours */
 	
 	--clr-prim: #0099ff; 
-	--clr-sec: #c2e3f9;
+	--clr-sec: hsl(204, 100%, 94%);
+	--clr-dark: #406493;
+	--clr-brown: #673e00;
 	
 	
+}
+
+
+
+body {
+	padding-top: 64px;
+	position: relative;
+}
+
+
+/* Maybe style this differently for colapased nav and not ??? */
+.dropdown-menu {
+	background: var(--clr-prim);
+	border: none;
 }
 
 
@@ -15,10 +31,8 @@
 
 
 
-
-
 .header {
-	height: 100vh;
+	height: calc(100vh - 64px);
 }
 
 
@@ -36,7 +50,7 @@
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
-	height: calc(100% - 72px);
+	height: 100%;
 	border-radius: 0;
 }
 
@@ -111,4 +125,22 @@ h2 {
  
  
  
+
+
+
+
+
+
+
+
+
+.footer {
+	background-color: var(--clr-prim);
+	text-align: center;
+	height: 60px;
+}
+
+.footer__copy {
+	line-height: 60px;
+}
  

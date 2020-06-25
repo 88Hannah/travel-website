@@ -6,27 +6,42 @@
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 	
-		<title>**********</title>
+		<title>Hannah's Adventures</title>
+		
+		<link rel="apple-touch-icon" sizes="180x180" href="images/fav/apple-touch-icon.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="images/fav/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="images/fav/favicon-16x16.png">
+		<link rel="manifest" href="images/fav/site.webmanifest">
+		<link rel="mask-icon" href="images/fav/safari-pinned-tab.svg" color="#0099ff">
+		<link rel="shortcut icon" href="images/fav/favicon.ico">
+		<meta name="msapplication-TileColor" content="#2b5797">
+		<meta name="msapplication-config" content="images/fav/browserconfig.xml">
+		<meta name="theme-color" content="#406493">
+		
+		
 		
 		<!-- Bootstrap CSS -->
 		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" 
 		integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 		
 		
+		<!-- Font Awesome -->
+		<script src="https://kit.fontawesome.com/ac82ed439f.js" crossorigin="anonymous"></script>
+
 		<!-- Personalised CSS -->
 		<link href="css/style.css" rel="stylesheet">
 		
 	</head>
 
 
-	<body>
+	<body data-spy="scroll" data-target="#nav-list" data-offset="64">
 	
-		<header class="header">
+		<header class="header" id="home">
 			
 			<!-- navbar-expand-lg - determines when the nav switches between a button and a list
 				 bg-light is an example that can be added to set a colour -->
 	<!--Option to add "fixed-top" as a class -->
-			<nav class="navbar navbar-expand-lg navbar-light">
+			<nav class="navbar fixed-top navbar-expand-lg navbar-light">
 				
 	<!-- Should I add navbar-brand here as a class -->
 				<a href="#"><img class="logo" src="images/logo-black.png" alt=""></a>
@@ -45,28 +60,25 @@
 					
 					<!-- ml-auto makes the navigation list move to the right as the left margin is set to the max -->
 					<ul class="navbar-nav ml-auto">
-						<li class="nav-item"><a class="nav-link" href="#">Home</a></li>
-						<li class="nav-item"><a class="nav-link" href="#">About</a></li>
+						<li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+						<li class="nav-item"><a class="nav-link" href="#about">About</a></li>
 						
 						<!--Dropdown navigation link for countries -->
 						<li class="nav-item dropdown">
-	<!--Haven't included id="navbarDropdown" role="button" aria-haspopup="true" aria-expanded="false"-->
-							<a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">Countries</a>
+	<!--Haven't included id="navbarDropdown" aria-haspopup="true" aria-expanded="false"-->
+							<a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button" data-toggle="dropdown">Countries</a>
 							
-	<!--Haven't included aria-labelledby="navbarDropdown" -->
-							<div class="dropdown-menu">
-								<a class = "dropdown-item" href"#">China</a>
-								<a class = "dropdown-item" href"#">Australia</a>
-								<a class = "dropdown-item" href"#">New Zealand</a>
-								<a class = "dropdown-item" href"#">Singapore</a>
-								<a class = "dropdown-item" href"#">Philippines</a>
-								<a class = "dropdown-item" href"#">Japan</a>
+							<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+								<a class = "dropdown-item" href="#">China</a>
+								<a class = "dropdown-item" href="#">Australia</a>
+								<a class = "dropdown-item" href="#">New Zealand</a>
+								<a class = "dropdown-item" href="#">Singapore</a>
+								<a class = "dropdown-item" href="#">Philippines</a>
+								<a class = "dropdown-item" href="#">Japan</a>
 							</div>
 						</li>
 						
-						<li class="nav-item"><a class="nav-link" href="#">Gallery</a></li>
-						<li class="nav-item"><a class="nav-link" href="#">Team</a></li>
-						<li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+						<li class="nav-item"><a class="nav-link" href="#summary">Summary</a></li>
 					</ul>
 				</div>
 			</nav>
@@ -79,15 +91,15 @@
 				<div class="container jumbo__text">
 					<!-- Could consider changing display-4 to larger font on bigger screens -->
 					<h1 class="display-3">My Adventures</h1>
-					<p class="lead">A look into some of the places that I've been</p>
-					<a class="btn btn-lg jumbo__btn" >See more</a>
+					<p class="lead">Take a look at the places that I got to visit in 2020</p>
+					<a class="btn btn-lg jumbo__btn" href="#about" >Let's Go!</a>
 				</div>
 			</div>
 			
 		</header>
 		
 		
-		<section class="about">
+		<section class="about" id="about">
 		
 			<div class="container">
 			
@@ -117,11 +129,11 @@
 		</section>
 		
 		
-		<section class="countries">
+		<section class="countries" id="countries">
 		
 			<div class="container">
 			
-				<h2>Where I've been</h2>
+				<h2>Where we went</h2>
 			
 				<div class="row row-cols-1 row-cols-sm-2 row-cols-lg-3 "> <!--A div to wrap all the cards in -->
 				
@@ -130,7 +142,7 @@
 						<div class="card">
 							<img class="card-top-img countries__img" src="images/china.jpg" alt="">
 							<div class="card-body">
-								<h3>China</h3>
+								<h3><i class="fas fa-map-marker-alt"></i> China</h3>
 								<p>A litte blurb about the country</p>
 								<a href="#" class="btn countries__btn">Read more</a>
 							</div>
@@ -141,7 +153,7 @@
 						<div class="card">
 							<img class="card-top-img countries__img" src="images/australia.jpg" alt="">
 							<div class="card-body">
-								<h3>Australia</h3>
+								<h3><i class="fas fa-map-marker-alt"></i> Australia</h3>
 								<p>A litte blurb about the country</p>
 								<a href="#" class="btn countries__btn">Read more</a>
 							</div>
@@ -152,7 +164,7 @@
 						<div class="card">
 							<img class="card-top-img countries__img" src="images/new-zealand.jpg" alt="">
 							<div class="card-body">
-								<h3>New Zealand</h3>
+								<h3><i class="fas fa-map-marker-alt"></i> New Zealand</h3>
 								<p>A litte blurb about the country</p>
 								<a href="#" class="btn countries__btn">Read more</a>
 							</div>
@@ -163,7 +175,7 @@
 						<div class="card">
 							<img class="card-top-img countries__img" src="images/singapore.jpg" alt="">
 							<div class="card-body">
-								<h3>Singapore</h3>
+								<h3><i class="fas fa-map-marker-alt"></i> Singapore</h3>
 								<p>A litte blurb about the country</p>
 								<a href="#" class="btn countries__btn">Read more</a>
 							</div>
@@ -174,7 +186,7 @@
 						<div class="card">
 							<img class="card-top-img countries__img" src="images/philippines.jpg" alt="">
 							<div class="card-body">
-								<h3>Philippines</h3>
+								<h3><i class="fas fa-map-marker-alt"></i> Philippines</h3>
 								<p>A litte blurb about the country</p>
 								<a href="#" class="btn countries__btn">Read more</a>
 							</div>
@@ -185,23 +197,41 @@
 						<div class="card">
 							<img class="card-top-img countries__img" src="images/japan.jpg" alt="">
 							<div class="card-body">
-								<h3>Japan</h3>
+								<h3><i class="fas fa-map-marker-alt"></i> Japan</h3>
 								<p>A litte blurb about the country</p>
 								<a href="#" class="btn countries__btn">Read more</a>
 							</div>
 						</div>
 					</div>
-					
-					
-					
-				
-				
 				
 				</div>
 						
 			</div>
 				
 		</section>
+
+
+
+		<section class="summary" id="summary">
+
+			<div class="container">
+
+				<h2>Now it's all over</h2>
+
+				<div class="summary__text">
+					<p>Although things didn't turn out as planned we still had a great time.</p>
+					<p>I've spent my time back home learning a new skills in web development. Check out the rest of my work <a href="https://hannahsangar.now.sh/">here</a>.</p>
+				</div>
+
+			</div>
+
+		</section>
+
+
+		<footer class="footer">
+			<!-- <img class="logo" src="images/logo-black.png" alt=""> -->
+			<p class="footer__copy">&copy; Hannah Sangar 2020</p>
+		</footer>
 		
 			
 	
