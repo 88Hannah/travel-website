@@ -5,9 +5,20 @@
 	/* Colours */
 	
 	--clr-prim: #0099ff; 
-	--clr-sec: #c2e3f9;
+	--clr-sec: #e0f3ff;
+	--clr-dark: #406493;
+	--clr-brown: #673e00;
 	
 	
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+	padding-top: 64px;
+	position: relative;
 }
 
 
@@ -17,8 +28,19 @@
 
 
 
+section {
+	padding: 30px 0;
+}
+
+.container {
+	padding-top:94px;
+	margin-top:-94px;
+}
+
 .header {
 	height: 100vh;
+	padding-top:64px;
+	margin-top:-64px;
 }
 
 
@@ -30,15 +52,24 @@
 	background: var(--clr-prim);
 }
 
+.jumbo-home {
+	background: url("../images/map.jpg");
+}
+
+.jumbo-philippines {
+	background: url("../images/philippines.jpg");
+}
+
 .jumbotron {
-	background: url("../images/map.jpg"); /* Why did /images.. not work here? Why did I need the ../images...? */
 	background-color: var(--clr-sec);
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
-	height: calc(100% - 72px);
+	height: 100%;
 	border-radius: 0;
 }
+
+
 
 .jumbo__text {
 	color: #fff;
@@ -48,9 +79,37 @@
 	background: var(--clr-prim);
 }
 
-section {
-	padding: 30px 0;
+
+.nav-link.active {
+	/* background: red; */
+	/* color: greenyellow !important; */
+	font-weight: 700;
 }
+
+.nav-link:hover {
+	text-decoration: underline;
+}
+
+.dropdown-menu {
+	background: var(--clr-sec);
+	max-width: max-content;
+	border: none;
+}
+
+.dropdown-item:hover {
+	background: var(--clr-dark);
+	color: white;
+}
+
+
+
+
+
+
+
+
+
+
 
 h2 {
 	text-align: center;
@@ -89,26 +148,38 @@ h2 {
 	background: var(--clr-sec);
 }
  
-.countries__img {
-	display: block;
-	width: 100%;
-	height: auto;
-}
-
 
 .countries__btn {
 	background: var(--clr-prim);
 	color: #fff;
 }
 
+
+
 .card-body h3 {
 	color: var(--clr-prim);
 }
  
-.countries__card > .card {
-	border: none;
+
+ 
+ 
+
+
+
+
+
+
+
+
+
+.footer {
+	background-color: var(--clr-prim);
+	text-align: center;
+	height: 60px;
 }
- 
- 
- 
+
+.footer__copy {
+	line-height: 60px;
+	margin: 0;
+}
  
