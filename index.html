@@ -34,7 +34,7 @@
 	</head>
 
 
-	<body data-spy="scroll" data-target="#nav-list" data-offset="64">
+	<body data-spy="scroll" data-target="#nav-list">
 	
 		<header class="header" id="home">
 			
@@ -61,7 +61,7 @@
 					<!-- ml-auto makes the navigation list move to the right as the left margin is set to the max -->
 					<ul class="navbar-nav ml-auto">
 						<li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
-						<li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+						<li class="nav-item"><a class="nav-link" href="#about-anchor">About</a></li>
 						
 						<!--Dropdown navigation link for countries -->
 						<li class="nav-item dropdown">
@@ -73,12 +73,12 @@
 								<a class = "dropdown-item" href="#">Australia</a>
 								<a class = "dropdown-item" href="#">New Zealand</a>
 								<a class = "dropdown-item" href="#">Singapore</a>
-								<a class = "dropdown-item" href="#">Philippines</a>
+								<a class = "dropdown-item" href="./philippines.html">Philippines</a>
 								<a class = "dropdown-item" href="#">Japan</a>
 							</div>
 						</li>
 						
-						<li class="nav-item"><a class="nav-link" href="#summary">Summary</a></li>
+						<li class="nav-item"><a class="nav-link" href="#summary-anchor">Conclusion</a></li>
 					</ul>
 				</div>
 			</nav>
@@ -87,21 +87,21 @@
 			-->
 			
 			<!-- Jumbotron -->
-			<div class="jumbotron d-flex align-items-center">
+			<div class="jumbotron d-flex align-items-center jumbo-home">
 				<div class="container jumbo__text">
 					<!-- Could consider changing display-4 to larger font on bigger screens -->
 					<h1 class="display-3">My Adventures</h1>
 					<p class="lead">Take a look at the places that I got to visit in 2020</p>
-					<a class="btn btn-lg jumbo__btn" href="#about" >Let's Go!</a>
+					<a class="btn btn-lg jumbo__btn" href="#about-anchor" >Let's Go!</a>
 				</div>
 			</div>
 			
 		</header>
 		
 		
-		<section class="about" id="about">
+		<section class="about">
 		
-			<div class="container">
+			<div class="container" id="about-anchor">
 			
 				<h2>About me</h2>
 				
@@ -112,7 +112,7 @@
 					</div>
 					
 					<div class="about__text col-12 col-md-6 col-lg-8">
-						<div>
+						<div class="text-justify">
 							<p>My name is Hannah and I love trying new things.</p>
 							<p>I've always enjoyed travelling and planned to spend the year 2020 travelling the world with my husband and our friends. 
 							Unfortunately we were only able to travel for 3 months of the 12 that we had planned.</p>
@@ -129,9 +129,9 @@
 		</section>
 		
 		
-		<section class="countries" id="countries">
+		<section class="countries">
 		
-			<div class="container">
+			<div class="container"  id="countries-anchor">
 			
 				<h2>Where we went</h2>
 			
@@ -139,66 +139,78 @@
 				
 					
 					<div class="col mb-4 countries__card">
-						<div class="card">
-							<img class="card-top-img countries__img" src="images/china.jpg" alt="">
-							<div class="card-body">
+						<div class="card h-100 border-0">
+							<img class="card-top-img countries__img w-100" src="images/china.jpg" alt="">
+							<div class="card-body pb-0">
 								<h3><i class="fas fa-map-marker-alt"></i> China</h3>
-								<p>A litte blurb about the country</p>
+								<p>We only had one stop here - there's so much more to see.</p>
+							</div>
+							<div class="card-footer bg-transparent pt-0 border-0">
 								<a href="#" class="btn countries__btn">Read more</a>
 							</div>
 						</div>
 					</div>
 					
 					<div class="col mb-4 countries__card">
-						<div class="card">
-							<img class="card-top-img countries__img" src="images/australia.jpg" alt="">
-							<div class="card-body">
+						<div class="card h-100 border-0">
+							<img class="card-top-img countries__img w-100" src="images/australia.jpg" alt="">
+							<div class="card-body pb-0">
 								<h3><i class="fas fa-map-marker-alt"></i> Australia</h3>
-								<p>A litte blurb about the country</p>
+								<p>We had stops along both the East and West coasts.</p>
+							</div>
+							<div class="card-footer bg-transparent pt-0 border-0">
 								<a href="#" class="btn countries__btn">Read more</a>
 							</div>
 						</div>
 					</div>
 					
 					<div class="col mb-4 countries__card">
-						<div class="card">
-							<img class="card-top-img countries__img" src="images/new-zealand.jpg" alt="">
-							<div class="card-body">
+						<div class="card h-100 border-0">
+							<img class="card-top-img countries__img w-100" src="images/new-zealand.jpg" alt="">
+							<div class="card-body pb-0">
 								<h3><i class="fas fa-map-marker-alt"></i> New Zealand</h3>
-								<p>A litte blurb about the country</p>
+								<p>We fell in love with this place, definitely want to go back! </p>
+							</div>
+							<div class="card-footer bg-transparent pt-0 border-0">
 								<a href="#" class="btn countries__btn">Read more</a>
 							</div>
 						</div>
 					</div>
 					
 					<div class="col mb-4 countries__card">
-						<div class="card">
-							<img class="card-top-img countries__img" src="images/singapore.jpg" alt="">
-							<div class="card-body">
+						<div class="card h-100 border-0">
+							<img class="card-top-img countries__img w-100" src="images/singapore.jpg" alt="">
+							<div class="card-body pb-0">
 								<h3><i class="fas fa-map-marker-alt"></i> Singapore</h3>
-								<p>A litte blurb about the country</p>
+								<p>It was so hot here, but the food was great.</p>
+							</div>
+							<div class="card-footer bg-transparent pt-0 border-0">
 								<a href="#" class="btn countries__btn">Read more</a>
 							</div>
 						</div>
 					</div>
 					
 					<div class="col mb-4 countries__card">
-						<div class="card">
-							<img class="card-top-img countries__img" src="images/philippines.jpg" alt="">
-							<div class="card-body">
+						<div class="card h-100 border-0">
+							<img class="card-top-img countries__img w-100" src="images/philippines.jpg" alt="">
+							<div class="card-body pb-0">
 								<h3><i class="fas fa-map-marker-alt"></i> Philippines</h3>
-								<p>A litte blurb about the country</p>
+								<p>Such a beautiful place with so many islands to explore.</p>
+							</div>
+							<div class="card-footer bg-transparent pt-0 border-0">
 								<a href="#" class="btn countries__btn">Read more</a>
 							</div>
 						</div>
 					</div>
 					
 					<div class="col mb-4 countries__card">
-						<div class="card">
-							<img class="card-top-img countries__img" src="images/japan.jpg" alt="">
-							<div class="card-body">
+						<div class="card h-100 border-0">
+							<img class="card-top-img countries__img w-100" src="images/japan.jpg" alt="">
+							<div class="card-body pb-0">
 								<h3><i class="fas fa-map-marker-alt"></i> Japan</h3>
-								<p>A litte blurb about the country</p>
+								<p>We spent the whole time hunting down blossom!</p>
+							</div>
+							<div class="card-footer bg-transparent pt-0 border-0">
 								<a href="#" class="btn countries__btn">Read more</a>
 							</div>
 						</div>
@@ -212,15 +224,29 @@
 
 
 
-		<section class="summary" id="summary">
+		<section class="summary">
 
-			<div class="container">
+			<div class="container px-lg-5" id="summary-anchor">
 
 				<h2>Now it's all over</h2>
 
-				<div class="summary__text">
-					<p>Although things didn't turn out as planned we still had a great time.</p>
-					<p>I've spent my time back home learning a new skills in web development. Check out the rest of my work <a href="https://hannahsangar.now.sh/">here</a>.</p>
+				<div class="summary__text text-justify px-lg-5">
+					<p>Although things didn't turn out as planned we still had a fantastic time and if I could go 
+						back to January knowing that the trip would be cut short I would still choose to go.
+					</p>
+					<p>However, the whole thing was very strange. 
+						We felt like we were in our own little bubble trying to run away from the virus. 
+						From the east coast of Australia onwards our daily routine evolved around checking for Covid-19 updates 
+						and deciding whether our future travel plans were still viable and if not rushing to make new ones. 
+					</p>
+					<p>We felt like we were winning, we'd managed to avoid the lockdowns and restrictions for so long but eventually 
+						it all became too much and we had to admit defeat and head back to the UK.
+					</p>
+					<p>Since we’ve been home I've spent my time learning web development. 
+						I’m really enjoying it and I’m proud of what I’ve managed to achieve. 
+						I’ve built this site from scratch and you can check out the rest of my work <a href="https://hannahsangar.now.sh/">here</a>. 
+						I often wonder if I’d ever have found the time to develop these skills if it hadn’t been for Covid-19. They say every cloud …
+					</p>
 				</div>
 
 			</div>
@@ -229,7 +255,6 @@
 
 
 		<footer class="footer">
-			<!-- <img class="logo" src="images/logo-black.png" alt=""> -->
 			<p class="footer__copy">&copy; Hannah Sangar 2020</p>
 		</footer>
 		
