@@ -9,24 +9,6 @@ const aboutLink = document.querySelector('a[href="#about-anchor"]');
 const about = document.getElementById('about-anchor');
 const countries = document.getElementById('countries-anchor');
 
-const countriesHeight = countries.getBoundingClientRect().height;
-
-console.log(aboutLink);
-
-// let active = false;
-// navLinks.forEach(link => {
-
-//     if (link.classList.contains(active)) {
-//         return active = true;
-//     }
-
-// });
-
-// if (!active) {
-//     dropDownLink.classList.add('active');
-// }
-
-
 document.addEventListener('scroll', () => {
 
     const countriesPosition = countries.getBoundingClientRect().top;
@@ -51,8 +33,7 @@ document.addEventListener('scroll', () => {
         }
     }
 
-});
-
+}, {passive: true});
 
 
 
