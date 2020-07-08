@@ -1,13 +1,405 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
 
-    <h1>hi</h1>
-    
-</body>
+<html lang="en">
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		
+		<!-- Primary Meta Tags -->
+		<title>Hannah's Adventures | Japan</title>
+		<meta name="title" content="Hannah's Adventures">
+		<meta name="description" content="Do you want to find out what we got up to in Japan and see some great pictures? Then check this out.">
+
+		<!-- Open Graph / Facebook -->
+		<meta property="og:type" content="website">
+		<meta property="og:url" content="https://hannahsangar-traveladventures.vercel.app/japan.html">
+		<meta property="og:title" content="Hannah's Adventures">
+		<meta property="og:description" content="Do you want to find out what we got up to in Japan and see some great pictures? Then check this out.
+			">
+		<meta property="og:image" content="/images/japan/japan-main-mini.jpg">
+
+		<!-- Twitter -->
+		<meta property="twitter:card" content="summary_large_image">
+		<meta property="twitter:url" content="https://hannahsangar-traveladventures.vercel.app/japan.html">
+		<meta property="twitter:title" content="Hannah's Adventures">
+		<meta property="twitter:description" content="Do you want to find out what we got up to in Japan and see some great pictures? Then check this out.">
+		<meta property="twitter:image" content="/images/japan/japan-main-mini.jpg">
+
+		<!-- Favicon and themes -->
+		<link rel="apple-touch-icon" sizes="180x180" href="images/fav/apple-touch-icon.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="images/fav/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="images/fav/favicon-16x16.png">
+		<link rel="manifest" href="images/fav/site.webmanifest">
+		<link rel="mask-icon" href="images/fav/safari-pinned-tab.svg" color="#0099ff">
+		<link rel="shortcut icon" href="images/fav/favicon.ico">
+		<meta name="msapplication-TileColor" content="#2b5797">
+		<meta name="msapplication-config" content="images/fav/browserconfig.xml">
+		<meta name="theme-color" content="#406493">
+				
+		<!-- Bootstrap CSS -->
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" 
+		integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+		
+		<!-- Font Awesome -->
+		<script src="https://kit.fontawesome.com/ac82ed439f.js" crossorigin="anonymous"></script>
+
+		<!-- Personalised CSS -->
+		<link href="css/style.css" rel="stylesheet">
+		
+	</head>
+
+
+	<body>
+	
+		<header class="header country-header" id="home">
+			
+			<nav class="navbar fixed-top navbar-expand-lg navbar-light">
+				
+				<a href="https://hannahsangar.now.sh/"><img class="logo" src="images/logo-black.png" alt="My portfolio website"></a>
+				
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nav-list" aria-label="Toggle navigation" aria-controls="nav-list" aria-expanded="false">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				
+				<div class="collapse navbar-collapse" id="nav-list">
+								
+					<ul class="navbar-nav ml-auto">
+						<li class="nav-item"><a class="nav-link" href="./index.html">Home</a></li>
+						<li class="nav-item"><a class="nav-link" href="./index.html#about-anchor">About</a></li>
+						
+						<!--Dropdown navigation link for countries -->
+						<li class="nav-item dropdown">
+							<a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown" aria-expanded="false">Countries</a>
+							<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+								<a class = "dropdown-item" href="./china.html">China</a>
+								<a class = "dropdown-item" href="./australia.html">Australia</a>
+								<a class = "dropdown-item" href="./new-zealand.html">New Zealand</a>
+								<a class = "dropdown-item" href="./singapore.html">Singapore</a>
+								<a class = "dropdown-item" href="./philippines.html">Philippines</a>
+								<a class = "dropdown-item" href="./japan.html">Japan</a>
+							</div>
+						</li>
+						
+						<li class="nav-item"><a class="nav-link" href="./index.html#summary-anchor">Conclusion</a></li>
+					</ul>
+				</div>
+			</nav>
+
+			<!-- Jumbotron -->
+			<div class="jumbotron d-flex align-items-center jumbo-japan">
+				<div class="container jumbo__text">
+					<h1 class="display-5 font-weight-bold text-uppercase country-heading">Japan</h1>
+				</div>
+			</div>
+			
+		</header>
+
+
+		<section class="country-intro">
+
+			<div class="container">
+				<div class="text-justify px-3 px-sm-0 px-lg-5">
+                    <p>Japan ended up being the last stop on our trip and we were lucky enough to spend a whole month there. 
+                        Compared to other countries they were quite late bringing in travel restrictions which meant that we were able to visit the majority of places on our lists and were still going out to restaurants when everyone back in the UK had entered lockdown. </p>    
+                </div>
+			</div>
+
+		</section>
+		
+
+		<section class="map">
+
+				<div class="iframe-container">
+                    <iframe class="map d-block mx-auto" title="A map of our stops in Japan" src="https://www.google.com/maps/d/u/0/embed?mid=1ANZZkcvywEI700Zae_IMGcT3JK1wJQ1k"></iframe>
+				</div>
+
+		</section>
+
+
+		<section class="stops">
+
+			<div class="container stops-container">
+
+				<h2>Stops</h2>
+
+                <div class="card mb-4 border-0">
+					<div class="d-md-flex no-gutters">
+						<div class="card-img-container__country order-1">
+							<img src="/images/japan/japan-02.jpg" class="card-img card-img__country h-100" alt="Osaka castle">
+						</div>
+						<div class="card-body-container__country order-2">
+							<div class="card-body">
+								<h5 class="card-title">Osaka</h5>
+								<p>It was a big shock arriving in Osaka, it was vastly different to the laid back Philippines that we had just come from. </p>
+								<p>We stayed here five nights and used it as a base to make day trips to Nara to see the deers, 
+                                    Himeji to see the castle and Kyoto to see the shrine with hundreds of gates, the bamboo forest and a temple.</p>
+								<p class="mb-0">We also had some good food here, a great katsu curry and a couple of amazing okonomiyaki which are traditional japanese savory pancakes. </p>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="card mb-4 border-0">
+					<div class="d-md-flex no-gutters">
+						<div class="card-img-container__country order-2">
+							<img src="/images/japan/japan-18.jpg" class="card-img card-img__country h-100" alt="Kumamoto castle">
+						</div>
+						<div class="card-body-container__country order-1">
+							<div class="card-body">
+								<h5 class="card-title">Kumamoto</h5>
+								<p>We travelled around Japan using a J-Rail pass which got us on a lot of the trains for free. 
+                                    Our trip to Kumamoto was over five hours so there was plenty of time to read books and watch tv on our phones. </p>
+								<p>There is a famous monster in Kumamoto which looks a bit like a teddy bear, there are pictures of it up all around the town. </p>
+								<p class="mb-0">We took a day trip in a car to Takachiho Gorge and Aso volcano which was activer and had ash coming out of the top of it.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+
+                <div class="card mb-4 border-0">
+					<div class="d-md-flex no-gutters">
+						<div class="card-img-container__country order-1">
+							<img src="/images/japan/japan-21.jpg" class="card-img card-img__country h-100" alt="Fukuoka">
+						</div>
+						<div class="card-body-container__country order-2">
+							<div class="card-body">
+								<h5 class="card-title">Fukuoka</h5>
+								<p class="mb-0">We didn’t have much planned here so we just ended up eating some good food and spending an evening at karaoke with some locals. 
+                                    It was a good job the Japanese people were there otherwise we would have had no idea how to work the karaoke machine. </p>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="card mb-4 border-0">
+					<div class="d-md-flex no-gutters">
+						<div class="card-img-container__country order-2">
+							<img src="/images/japan/japan-23.jpg" class="card-img card-img__country h-100" alt="Kumamoto castle">
+						</div>
+						<div class="card-body-container__country order-1">
+							<div class="card-body">
+								<h5 class="card-title">Nagasaki and Hashima Island</h5>
+								<p class="mb-0">We stopped off in Nagasaki so that we could take a trip to Hashima Island which also goes by the name of Gunkanjima which translates to Battleship Island. 
+                                    It is an abandoned island that was used to mine coal from below the seabed from the late 19th century to until 1974. It reminded me of our trip to Chernobyl a few years before. </p>
+							</div>
+						</div>
+					</div>
+                </div>
+
+                <div class="card mb-4 border-0">
+					<div class="d-md-flex no-gutters">
+						<div class="card-img-container__country order-1">
+							<img src="/images/japan/japan-29.jpg" class="card-img card-img__country h-100" alt="Steamy Beppu at night">
+						</div>
+						<div class="card-body-container__country order-2">
+							<div class="card-body">
+								<h5 class="card-title">Beppu</h5>
+								<p class="mb-0">This is one of Japan’s most famous hot springs. We visited most of the “hells” which reach temperatures far too hot to bath in. 
+                                    We then went to some public onsen baths which are heated from the springs. You are expected to enter then naked so we embraced the tradition and removed all our clothes!</p>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="card mb-4 border-0">
+					<div class="d-md-flex no-gutters">
+						<div class="card-img-container__country order-2">
+							<img src="/images/japan/japan-31.jpg" class="card-img card-img__country h-100" alt="The Atomic Bomb Dome in Hiroshima">
+						</div>
+						<div class="card-body-container__country order-1">
+							<div class="card-body">
+								<h5 class="card-title">Hiroshima</h5>
+								<p>Unfortunately the museum was closed which was a shame as this was a highlight of our trip to Japan last time. 
+                                    Instead we spent time walking around the town to see the A-Bomb Dome and the castle whose grounds were full of beautiful cherry blossoms. </p>
+								<p class="mb-0">From here we also took a trip to rabbit island. It’s a strange place, there are rabbits everywhere! </p>
+							</div>
+						</div>
+					</div>
+				</div>
+            
+                <div class="card mb-4 border-0">
+                    <div class="d-md-flex no-gutters">
+                        <div class="card-img-container__country order-1">
+                            <img src="/images/japan/japan-39.jpg" class="card-img card-img__country h-100" alt="Kanazawa castle">
+                        </div>
+                        <div class="card-body-container__country order-2">
+                            <div class="card-body">
+                                <h5 class="card-title">Kanazawa</h5>
+                                <p>We had a lovely day walking around the Kenrokuen Garden and Kanazawa Castle grounds. 
+                                    We couldn’t believe how much cherry blossom there was. We felt like we’d been hunting for it since we got to Japan and then all of a sudden it all appeared at once. </p>
+								<p class="mb-0">From here we also took a day trip to Shirakawa-Go which is a traditional village and a world heritage site.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card mb-4 border-0">
+                    <div class="d-md-flex no-gutters">
+                        <div class="card-img-container__country order-2">
+                            <img src="/images/japan/japan-43.jpg" class="card-img card-img__country h-100" alt="Matsumoto castle">
+                        </div>
+                        <div class="card-body-container__country order-1">
+                            <div class="card-body">
+                                <h5 class="card-title">Matsumoto</h5>
+								<p class="mb-0">By this point there was a severe lack of tourists in Japan which meant that the hotels were all very nice to us and here we were upgraded to large Japanese rooms with futons. 
+                                    Matsumoto is just a small town and we only stayed for one night. We found a nice Korean for dinner and had an amazing chicken and cheese fondue. </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card mb-4 border-0">
+                    <div class="d-md-flex no-gutters">
+                        <div class="card-img-container__country order-1">
+                            <img src="/images/japan/japan-45.jpg" class="card-img card-img__country h-100" alt="Japanese breakfast">
+                        </div>
+                        <div class="card-body-container__country order-2">
+                            <div class="card-body">
+                                <h5 class="card-title">Shibu Onsen</h5>
+                                <p>This is a tiny little village. There is no public transport and the owner of the hotel came to pick us up from the train station. 
+                                    He then drove us to the snow monkey park where we saw loads of monkeys. 
+                                    In the winter they get in the hot springs to stay warm but unfortunately we visited slightly too late in the year to see that. </p>
+                                <p>We were served a japanese breakfast which was interesting, very different from a traditional English fry up! </p>
+                                <p class="mb-0">The town is full of Onsens which are free to use if you are staying in some of the hotels. 
+                                    They were far too hot for us and we spent a lot of the time running the cold taps to cool them down. 
+                                    Hopefully we didn’t make them too cold for the locals!</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card mb-4 border-0">
+                    <div class="d-md-flex no-gutters">
+                        <div class="card-img-container__country order-2">
+                            <img src="/images/japan/japan-48.jpg" class="card-img card-img__country h-100" alt="A view of Mount Fuji from our hike">
+                        </div>
+                        <div class="card-body-container__country order-1">
+                            <div class="card-body">
+                                <h5 class="card-title">Lake Kawaguchi</h5>
+                                <p>We decided that it was best to stay away from the big cities as the restrictions in Japan due to the virus were starting to come into force. 
+                                    We had a lovely few days staying in an apartment with a brilliant view of Mount Fuji. </p>
+								<p class="mb-0">Last time we visited Japan we hiked to the top of Mount Fuji but it was a bit early in the year to do it this time 
+                                    so instead we walked up another local mountain which gave us great views of Mount Fuji instead. </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card mb-4 border-0">
+                    <div class="d-md-flex no-gutters">
+                        <div class="card-img-container__country order-1">
+                            <img src="/images/japan/japan-52.jpg" class="card-img card-img__country h-100" alt="Shibuya crossing">
+                        </div>
+                        <div class="card-body-container__country order-2">
+                            <div class="card-body">
+                                <h5 class="card-title">Tokyo</h5>
+                                <p>We just spent one night in Tokyo. It was very strange and the streets were so quiet. 
+                                    On our last day it rained so hard that we had to stay indoors but none of the indoor attractions were open so we just sat in a cafe playing cards and occasionally bought a drink or a cake.</p>
+								<p class="mb-0">We reluctantly began our journey back to England. When we got to the airport we could see that our flight was the only one that was running that night. 
+                                    The airport was deserted and there were only 14 passengers on our flight. 
+                                    I think we picked the right time to head home, much longer and we may have got stuck but it was still upsetting. 
+                                    Our fantastic trip came to an end far too soon. </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            
+            </div>
+
+		</section>
+
+
+		<section class="gallery">
+
+			<div class="container">
+			
+				<h2>Gallery</h2>
+
+				<div class="gallery-container">
+
+					<div><img src="/images/japan/japan-01.jpg" alt=""></div>
+					<div><img src="/images/japan/japan-02.jpg" alt=""></div>
+					<div class="vertical"><img src="/images/japan/japan-03.jpg" alt=""></div>
+					<div class="vertical"><img src="/images/japan/japan-04.jpg" alt=""></div>
+					<div class="big"><img src="/images/japan/japan-05.jpg" alt=""></div>
+					<div><img src="/images/japan/japan-06.jpg" alt=""></div>
+					<div class="vertical"><img src="/images/japan/japan-07.jpg" alt=""></div>
+					<div><img src="/images/japan/japan-08.jpg" alt=""></div>
+					<div class="vertical"><img src="/images/japan/japan-09.jpg" alt=""></div>
+                    <div class="vertical"><img src="/images/japan/japan-10.jpg" alt=""></div>
+                    <div><img src="/images/japan/japan-11.jpg" alt=""></div>
+					<div class="big"><img src="/images/japan/japan-12.jpg" alt=""></div>
+					<div class="vertical"><img src="/images/japan/japan-13.jpg" alt=""></div>
+					<div><img src="/images/japan/japan-14.jpg" alt=""></div>
+					<div class="vertical"><img src="/images/japan/japan-15.jpg" alt=""></div>
+					<div class="big"><img src="/images/japan/japan-16.jpg" alt=""></div>
+					<div><img src="/images/japan/japan-17.jpg" alt=""></div>
+					<div><img src="/images/japan/japan-18.jpg" alt=""></div>
+                    <div class="vertical"><img src="/images/japan/japan-19.jpg" alt=""></div>
+                    <div><img src="/images/japan/japan-20.jpg" alt=""></div>
+                    <div class="big"><img src="/images/japan/japan-21.jpg" alt=""></div>
+					<div><img src="/images/japan/japan-22.jpg" alt=""></div>
+					<div><img src="/images/japan/japan-23.jpg" alt=""></div>
+					<div><img src="/images/japan/japan-24.jpg" alt=""></div>
+					<div class="vertical"><img src="/images/japan/japan-25.jpg" alt=""></div>
+					<div class="vertical"><img src="/images/japan/japan-26.jpg" alt=""></div>
+					<div><img src="/images/japan/japan-27.jpg" alt=""></div>
+					<div class="vertical"><img src="/images/japan/japan-28.jpg" alt=""></div>
+                    <div ><img src="/images/japan/japan-29.jpg" alt=""></div>
+                    <div class="vertical"><img src="/images/japan/japan-30.jpg" alt=""></div>
+                    <div><img src="/images/japan/japan-31.jpg" alt=""></div>
+					<div class="vertical"><img src="/images/japan/japan-32.jpg" alt=""></div>
+					<div><img src="/images/japan/japan-33.jpg" alt=""></div>
+					<div class="big"><img src="/images/japan/japan-34.jpg" alt=""></div>
+					<div class="big"><img src="/images/japan/japan-35.jpg" alt=""></div>
+					<div><img src="/images/japan/japan-36.jpg" alt=""></div>
+					<div><img src="/images/japan/japan-37.jpg" alt=""></div>
+					<div class="vertical"><img src="/images/japan/japan-38.jpg" alt=""></div>
+                    <div><img src="/images/japan/japan-39.jpg" alt=""></div>
+                    <div><img src="/images/japan/japan-40.jpg" alt=""></div>
+                    <div class="big"><img src="/images/japan/japan-41.jpg" alt=""></div>
+					<div><img src="/images/japan/japan-42.jpg" alt=""></div>
+					<div><img src="/images/japan/japan-43.jpg" alt=""></div>
+					<div class="big"><img src="/images/japan/japan-44.jpg" alt=""></div>
+					<div><img src="/images/japan/japan-45.jpg" alt=""></div>
+					<div class="big"><img src="/images/japan/japan-46.jpg" alt=""></div>
+					<div><img src="/images/japan/japan-47.jpg" alt=""></div>
+					<div><img src="/images/japan/japan-48.jpg" alt=""></div>
+                    <div><img src="/images/japan/japan-49.jpg" alt=""></div>
+					<div class="vertical"><img src="/images/japan/japan-53.jpg" alt=""></div>
+					<div class="big"><img src="/images/japan/japan-52.jpg" alt=""></div>
+					<div class="horizontal"><img src="/images/japan/japan-55.jpg" alt=""></div>
+					<div class="vertical"><img src="/images/japan/japan-56.jpg" alt=""></div>
+					<div class="vertical"><img src="/images/japan/japan-57.jpg" alt=""></div>
+                    <div><img src="/images/japan/japan-50.jpg" alt=""></div>
+                    <div><img src="/images/japan/japan-51.jpg" alt=""></div>
+					<div><img src="/images/japan/japan-54.jpg" alt=""></div>
+				
+				</div>
+
+			</div>
+
+		</section>
+
+
+		<footer class="footer">
+			<p class="footer__text"><a href="https://hannahsangar.now.sh/">Portfolio</a></p>
+			<p class="footer__text">&copy; Hannah Sangar 2020</p>
+		</footer>
+		
+			
+		<!-- Bootstrap Javascript - jQuery, then Popper.js and finally Bootstrap JS -->
+		<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" 
+		integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+		<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" 
+		integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" 
+		integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+		
+		<!-- Personalised JS -->
+		<script src="js/javascript.js"></script>
+	
+	</body>
+
 </html>

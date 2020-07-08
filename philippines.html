@@ -13,7 +13,7 @@
 
 		<!-- Open Graph / Facebook -->
 		<meta property="og:type" content="website">
-		<meta property="og:url" content=""> <!-- FILL THIS IN!!! -->
+		<meta property="og:url" content="https://hannahsangar-traveladventures.vercel.app/philippines.html"> 
 		<meta property="og:title" content="Hannah's Adventures">
 		<meta property="og:description" content="Do you want to find out what we got up to in the Philippines and see some great pictures? Then check this out.
 			">
@@ -21,7 +21,7 @@
 
 		<!-- Twitter -->
 		<meta property="twitter:card" content="summary_large_image">
-		<meta property="twitter:url" content=""> <!-- FILL THIS IN!!! -->
+		<meta property="twitter:url" content="https://hannahsangar-traveladventures.vercel.app/philippines.html">
 		<meta property="twitter:title" content="Hannah's Adventures">
 		<meta property="twitter:description" content="Do you want to find out what we got up to in the Philippines and see some great pictures? Then check this out.">
 		<meta property="twitter:image" content="/images/philippines/philippines-main-mini.jpg">
@@ -52,38 +52,25 @@
 
 	<body>
 	
-		<header class="header" id="home">
+		<header class="header country-header" id="home">
 			
-			<!-- navbar-expand-lg - determines when the nav switches between a button and a list
-				 bg-light is an example that can be added to set a colour -->
-	<!--Option to add "fixed-top" as a class -->
 			<nav class="navbar fixed-top navbar-expand-lg navbar-light">
 				
-	<!-- Should I add navbar-brand here as a class -->
 				<a href="https://hannahsangar.now.sh/"><img class="logo" src="images/logo-black.png" alt="My portfolio website"></a>
 				
-				
-	<!-- Haven't included aria-controls and aria-expand -->
-				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nav-list" aria-label="Toggle navigation">
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nav-list" aria-label="Toggle navigation" aria-controls="nav-list" aria-expanded="false">
 					<span class="navbar-toggler-icon"></span>
 				</button>
 				
-				
-				<!-- The classnavbar-collapse made the navbar appear above the expand breakpoint set out in the nav class -->
-	<!-- Do each of the list items need data-vale="xxxxx" ? -->
-	<!-- I've changed the name of the id from navbarSupportedContent to nav-list, does this matter? -->
 				<div class="collapse navbar-collapse" id="nav-list">
 								
-					<!-- ml-auto makes the navigation list move to the right as the left margin is set to the max -->
 					<ul class="navbar-nav ml-auto">
 						<li class="nav-item"><a class="nav-link" href="./index.html">Home</a></li>
 						<li class="nav-item"><a class="nav-link" href="./index.html#about-anchor">About</a></li>
 						
 						<!--Dropdown navigation link for countries -->
 						<li class="nav-item dropdown">
-			<!--Haven't included id="navbarDropdown" aria-haspopup="true" aria-expanded="false"-->
-							<a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown">Countries</a>
-							
+							<a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown" aria-expanded="false">Countries</a>
 							<div class="dropdown-menu" aria-labelledby="navbarDropdown">
 								<a class = "dropdown-item" href="./china.html">China</a>
 								<a class = "dropdown-item" href="./australia.html">Australia</a>
@@ -99,7 +86,6 @@
 				</div>
 			</nav>
 
-			
 			<!-- Jumbotron -->
 			<div class="jumbotron d-flex align-items-center jumbo-philippines">
 				<div class="container jumbo__text">
@@ -109,13 +95,16 @@
 			
 		</header>
 
+
 		<section class="country-intro">
 
-			<div class="container text-justify">
-				<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. At porro dolorum, fuga, officiis quibusdam quasi laboriosam voluptas temporibus earum molestias voluptates nisi corrupti obcaecati suscipit tenetur in consectetur iusto cupiditate?</p>
-				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus et nostrum molestias magni ad minus veniam? Harum in commodi nemo ex dolores sapiente nulla deserunt quo, molestias autem odit corrupti?</p>
-				<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laboriosam et sed, quis culpa debitis eligendi! Accusamus repellat, hic soluta aliquid nam fugit, adipisci perspiciatis sint, amet in voluptatibus dolore non.</p>
-				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur eligendi quasi mollitia perferendis? Dicta sapiente non provident cupiditate nostrum quidem neque sint nisi vitae recusandae. Distinctio perferendis aliquid libero sapiente!</p>
+			<div class="container">
+				<div class="text-justify px-3 px-sm-0 px-lg-5">
+					<p>We originally wanted to spend at least another week in the Philippines but while we were there the government imposed a lot of restrictions on travel. 
+						We ended up spending a lot of our free time rearranging flights and planning our next best move which was a little stressful at times.</p>
+					<p>The Philippines is made up of so many small islands and we still have a lot left to explore. 
+						When we finally get to go back we would love to take a diving course as the area is home to a whole host of marine life that we weren’t able to see this time around. </p>
+				</div>
 			</div>
 
 		</section>
@@ -123,16 +112,11 @@
 
 		<section class="map">
 
-			<!-- <div class="container"> -->
-
 				<div class="iframe-container">
 					<iframe class="map d-block mx-auto" title="A map of our stops in the Philippines" src="https://www.google.com/maps/d/u/0/embed?mid=1EJKmzvXMzVvU_uPhmoMjo3hmgfz7Sb2I"></iframe>
 				</div>
-				
-			<!-- </div> -->
 
 		</section>
-
 
 
 		<section class="stops">
@@ -142,16 +126,16 @@
 				<h2>Stops</h2>
 
 				<div class="card mb-4 border-0">
-					<div class="row no-gutters">
-						<div class="col-md-4 col-lg-4">
+					<div class="d-md-flex no-gutters">
+						<div class="card-img-container__country order-1">
 							<img src="/images/philippines/philippines-02.jpg" class="card-img card-img__country h-100" alt="Mount Pinatubo Crater Lake">
 						</div>
-						<div class="col-md-8 col-lg-8">
+						<div class="card-body-container__country order-2">
 							<div class="card-body">
 								<h5 class="card-title">Mt Pinatubo</h5>
-								<p>Here is some text about what we did here. Minus pariatur autem doloribus! Tempora rerum vel in doloribus?</p>
-								<p>Here is some text about what we did here. Porro, distinctio debitis minus pariatur autem doloribus! Tempora rerum vel in doloribus?</p>
-								<p class="mb-0">Here is some text about what we did here. Tempora rerum vel in doloribus?</p>
+								<p class="mb-0">We stayed close to the airport in a city called Angeles which was well located for a trip to Mt Pinatubo. 
+									We had to get up early as it was a long drive followed by a long dusty jeep ride to the foot of the trail. 
+									We walked to see the crater lake which was formed when the volcano erupted in 1991.</p>
 							</div>
 						</div>
 					</div>
@@ -165,9 +149,10 @@
 						<div class="card-body-container__country order-1">
 							<div class="card-body">
 								<h5 class="card-title">Coron</h5>
-								<p>Here is some text about what we did here. Minus pariatur autem doloribus! Tempora rerum vel in doloribus?</p>
-								<p>Here is some text about what we did here. Porro, distinctio debitis minus pariatur autem doloribus! Tempora rerum vel in doloribus?</p>
-								<p class="mb-0">Here is some text about what we did here. Tempora rerum vel in doloribus?</p>
+								<p class="mb-0">The hotel we stayed in was the fanciest one of the trip. 
+									We stayed in little stone cottages where the bathroom had a view of the sea. 
+									We had a lovely time here canoeing and paddle boarding and we took a day trip on a bangka boat around some of the smaller local islands. 
+									We made stops where we could snorkel and swim and the crew cooked us a lovely fish lunch. </p>
 							</div>
 						</div>
 					</div>
@@ -181,9 +166,8 @@
 						<div class="card-body-container__country order-2">
 							<div class="card-body">
 								<h5 class="card-title">El Nido</h5>
-								<p>Here is some text about what we did here. Minus pariatur autem doloribus! Tempora rerum vel in doloribus?</p>
-								<p>Here is some text about what we did here. Porro, distinctio debitis minus pariatur autem doloribus! Tempora rerum vel in doloribus?</p>
-								<p class="mb-0">Here is some text about what we did here. Tempora rerum vel in doloribus?</p>
+								<p class="mb-0">There were so many amazing sunsets in El Nido and we spent a couple of days just relaxing on the local beaches. 
+									We also took another bangka boat tour where we saw Snake Island where a strip of sand connects two islands at low tide. </p>
 							</div>
 						</div>
 					</div>
@@ -228,13 +212,13 @@
 
 		</section>
 
+
 		<footer class="footer">
 			<p class="footer__text"><a href="https://hannahsangar.now.sh/">Portfolio</a></p>
 			<p class="footer__text">&copy; Hannah Sangar 2020</p>
 		</footer>
 		
 			
-	
 		<!-- Bootstrap Javascript - jQuery, then Popper.js and finally Bootstrap JS -->
 		<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" 
 		integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
@@ -247,6 +231,5 @@
 		<script src="js/javascript.js"></script>
 	
 	</body>
-
 
 </html>
