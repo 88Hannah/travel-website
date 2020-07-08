@@ -13,14 +13,14 @@
 
 		<!-- Open Graph / Facebook -->
 		<meta property="og:type" content="website">
-		<meta property="og:url" content=""> <!-- FILL THIS IN!!! -->
+		<meta property="og:url" content="https://hannahsangar-traveladventures.vercel.app/">
 		<meta property="og:title" content="Hannah's Adventures">
 		<meta property="og:description" content="Do you want to find out what we got up to on our travels and see some great pictures? Then check this out.">
 		<meta property="og:image" content="/images/map.jpg">
 
 		<!-- Twitter -->
 		<meta property="twitter:card" content="summary_large_image">
-		<meta property="twitter:url" content=""> <!-- FILL THIS IN!!! -->
+		<meta property="twitter:url" content="https://hannahsangar-traveladventures.vercel.app/">
 		<meta property="twitter:title" content="Hannah's Adventures">
 		<meta property="twitter:description" content="Do you want to find out what we got up to on our travels and see some great pictures? Then check this out.">
 		<meta property="twitter:image" content="/images/map.jpg">
@@ -53,37 +53,23 @@
 	
 		<header class="header" id="home">
 			
-			<!-- navbar-expand-lg - determines when the nav switches between a button and a list
-				 bg-light is an example that can be added to set a colour -->
-	<!--Option to add "fixed-top" as a class -->
 			<nav class="navbar fixed-top navbar-expand-lg navbar-light">
 				
-	<!-- Should I add navbar-brand here as a class -->
 				<a href="https://hannahsangar.now.sh/"><img class="logo" src="images/logo-black.png" alt="My portfolio website"></a>
 				
-				
-				
-	<!-- Haven't included aria-controls and aria-expand -->
-				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nav-list" aria-label="Toggle navigation">
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nav-list" aria-label="Toggle navigation" aria-controls="nav-list" aria-expanded="false">
 					<span class="navbar-toggler-icon"></span>
 				</button>
 				
-				
-				<!-- The classnavbar-collapse made the navbar appear above the expand breakpoint set out in the nav class -->
-	<!-- Do each of the list items need data-vale="xxxxx" ? -->
-	<!-- I've changed the name of the id from navbarSupportedContent to nav-list, does this matter? -->
 				<div class="collapse navbar-collapse" id="nav-list">
 					
-					<!-- ml-auto makes the navigation list move to the right as the left margin is set to the max -->
 					<ul class="navbar-nav ml-auto">
 						<li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
 						<li class="nav-item"><a class="nav-link" href="#about-anchor">About</a></li>
 						
 						<!--Dropdown navigation link for countries -->
 						<li class="nav-item dropdown">
-	<!--Haven't included id="navbarDropdown" aria-haspopup="true" aria-expanded="false"-->
-							<a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown">Countries</a>
-							
+							<a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown" aria-expanded="false">Countries</a>
 							<div class="dropdown-menu" aria-labelledby="navbarDropdown">
 								<a class = "dropdown-item" href="/china.html">China</a>
 								<a class = "dropdown-item" href="/australia.html">Australia</a>
@@ -98,14 +84,10 @@
 					</ul>
 				</div>
 			</nav>
-			<!-- ******* NAV NOTES ****** 
-				- add active class to the list item that the page is currently viewing			
-			-->
 			
 			<!-- Jumbotron -->
 			<div class="jumbotron d-flex align-items-center jumbo-home">
 				<div class="container jumbo__text">
-					<!-- Could consider changing display-4 to larger font on bigger screens -->
 					<h1 class="display-4">My Adventures</h1>
 					<p class="lead">Take a look at the places that I got to visit in 2020</p>
 					<a class="btn btn-lg jumbo__btn" href="#about-anchor" >Let's Go!</a>
@@ -128,7 +110,7 @@
 					</div>
 					
 					<div class="about__text col-12 col-md-6 col-lg-8">
-						<div class="text-justify">
+						<div class="px-3 px-sm-0 text-justify">
 							<p>My name is Hannah and I love trying new things.</p>
 							<p>I've always enjoyed travelling and planned to spend the year 2020 travelling the world with my husband and our friends. 
 							Unfortunately we were only able to travel for 3 months of the 12 that we had planned.</p>
@@ -153,7 +135,6 @@
 			
 				<div class="row row-cols-1 row-cols-sm-2 row-cols-lg-3 "> <!--A div to wrap all the cards in -->
 				
-					
 					<div class="col mb-4 countries__card">
 						<div class="card h-100 border-0">
 							<img class="card-top-img countries__img w-100" src="images/china/china-main-mini.jpg" alt="China's skyline">
@@ -239,14 +220,13 @@
 		</section>
 
 
-
 		<section class="summary">
 
 			<div class="container px-lg-5" id="summary-anchor">
 
 				<h2>Now it's all over</h2>
 
-				<div class="summary__text text-justify px-lg-5">
+				<div class="summary__text text-justify px-3 px-sm-0 px-lg-5">
 					<p>Although things didn't turn out as planned we still had a fantastic time and if I could go 
 						back to January knowing that the trip would be cut short I would still choose to go.
 					</p>
@@ -274,14 +254,7 @@
 			<p class="footer__text"><a href="https://hannahsangar.now.sh/">Portfolio</a></p>
 			<p class="footer__text">&copy; Hannah Sangar 2020</p>
 		</footer>
-		
 			
-	
-	
-	
-	
-	
-	
 	
 		<!-- Bootstrap Javascript - jQuery, then Popper.js and finally Bootstrap JS -->
 		<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" 
@@ -293,6 +266,7 @@
 		
 		<!-- Personalised JS -->
 		<script src="js/javascript.js"></script>
+		<script src="js/index.js"></script>
 	
 	</body>
 
